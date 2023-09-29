@@ -1,0 +1,84 @@
+body {
+    margin: 5em auto;
+    display: flex;
+    flex-direction: column;
+    background: #00416A;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #00416A, #E4E5E6);  
+    background: linear-gradient(to bottom, #00416A, #E4E5E6); 
+    align-items: center;
+    justify-content: center;
+    font-family: 'Montserrat', sans-serif;
+
+    text-align: center;
+}
+@keyframes bounce-left-right {
+    0% {
+      transform: translateX(0);
+    }
+    25% {
+      transform: translateX(50px);
+    }
+    50% {
+      transform: translateX(0);
+    }
+    75% {
+        transform: translateX(-50px);
+      }
+    100% {
+        transform: translateX(0);
+      }
+  }
+  
+  h1 {
+    animation: bounce-left-right 3s linear infinite;
+  }
+  
+  
+
+p {
+    font-size: 40px;
+    color: #00416A;
+    margin-top: 0;
+}
+button{
+    font-size: 60px;
+    font-weight: 0;
+    font-family: 'Montserrat', sans-serif;
+    border: 0 dotted #ccbb33;
+    padding: 0.1em 0.8em;
+    margin: 0.5em;
+    box-shadow: 0 0 20px #ccbb33;
+    background: -webkit-linear-gradient(to bottom, #00416A, #E4E5E6);  
+    background: linear-gradient(to bottom, #437a9c, #8ba9ca); 
+    opacity: 0.8;
+    border-radius: 9px;
+}
+button:hover {
+    opacity: 1;
+    box-shadow: -2px -2px 30px #ccbb33;
+    font-weight: 900;
+    cursor: pointer;
+    color: #ccbb33;
+}
+button:active{
+    opacity: 0.8;
+}
+.bot {
+    display: flex;
+    flex-direction: row;
+}
+.big-bot {
+    flex-direction: row-reverse;
+}
+.fun {
+    background: #00c3ff;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #ffff1c, #00c3ff);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #ffff1c, #00c3ff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+p.activity::first-letter {
+    font-size: 300%;
+    font-weight: 900;
+    color: #26a25a;
+  }
